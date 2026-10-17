@@ -10,8 +10,7 @@ licenses := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0
 val akkaVersion = "2.6.20"
 
 resolvers ++= Seq(
-  "Aliyun" at "https://maven.aliyun.com/repository/public/",
-  "Huawei" at "https://repo.huaweicloud.com/repository/maven/"
+  "Aliyun" at "https://maven.aliyun.com/repository/public/"
 )
 
 Compile / scalacOptions ++= Seq("-target:11", "-deprecation", "-feature", "-unchecked", "-Xlint")
