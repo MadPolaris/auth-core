@@ -2,10 +2,26 @@ ThisBuild / organization := "net.imadz"
 ThisBuild / organizationName := "MadPolaris"
 ThisBuild / organizationHomepage := Some(url("https://github.com/MadPolaris"))
 ThisBuild / scalaVersion := "2.13.14"
-ThisBuild / version := "0.1.0"
 ThisBuild / versionScheme := Some("early-semver")
 
 licenses := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0"))
+
+ThisBuild / homepage := Some(url("https://github.com/MadPolaris/auth-core"))
+ThisBuild / scmInfo := Some(
+  ScmInfo(
+    url("https://github.com/MadPolaris/auth-core"),
+    "git@github.com:MadPolaris/auth-core.git"
+  ))
+ThisBuild / developers := List(
+  Developer(
+    "MadPolaris",
+    "MadPolaris Team",
+    "zhongdj@gmail.com",
+    url("https://github.com/MadPolaris")
+  ))
+ThisBuild / sonatypeCredentialHost := "central.sonatype.com"
+// Version is derived from git tags by sbt-dynver (via sbt-ci-release):
+// push a tag like v0.2 to release that version.
 
 val akkaVersion = "2.6.20"
 

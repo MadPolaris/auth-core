@@ -7,7 +7,7 @@ Per-module generated stubs (`CommandRoleMap` / `ViewKeys`, keys differ per modul
 Extracted from [MadPolaris/playAkkaCQRS](https://github.com/MadPolaris/playAkkaCQRS) (`auth-core/` module).
 
 ```scala
-libraryDependencies += "net.imadz" %% "auth-core" % "0.1.0"
+libraryDependencies += "net.imadz" %% "auth-core" % "0.2"
 ```
 
 License: Apache-2.0.
